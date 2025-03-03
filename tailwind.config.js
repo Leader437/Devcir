@@ -31,20 +31,20 @@ export default {
     },
   },
   plugins: [
-    function ({ addComponents }) {
+    function ({ addComponents, theme }) {
       addComponents({
-        '.container': {
+        ".container": {
           width: '100%',
           maxWidth: '1200px',
-          paddingRight: '24px',
-          paddingLeft: '24px',
-          '@screen md': {
-            paddingRight: '32px',
-            paddingLeft: '32px',
+          paddingRight: '12px',
+          paddingLeft: '12px',
+          [`@media (min-width: ${theme("screens.md")})`]: {
+            paddingRight: "32px",
+            paddingLeft: "32px",
           },
-          '@screen lg': {
-            paddingRight: '52px',
-            paddingLeft: '52px',
+          [`@media (min-width: ${theme("screens.lg")})`]: {
+            paddingRight: "52px",
+            paddingLeft: "52px",
           },
         },
       });
