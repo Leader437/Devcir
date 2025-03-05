@@ -1,0 +1,8 @@
+.btn-v1 {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-v1:hover {
+    transform: translateY(-2px);
+    box-shadow: #0DA354 0px 5px 30px -10px;
+}
