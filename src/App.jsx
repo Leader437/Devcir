@@ -10,7 +10,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <>
-      <div className="min-h-[400dvh] text-custom-white" id="app-main">
+      <div className="min-h-[400dvh] text-custom-white pt-25 md:pt-30" id="app-main">
         <BrowserRouter>
           <Navbar />
           <Routes>

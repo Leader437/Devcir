@@ -15,10 +15,11 @@ export default {
       },
       colors: {
         customWhite: "#FFFFFF",
-        customGrey: "#808080",
+        customGrey: "#8D8D8D",
         customGreen: "#0DA354",
         customContrastGreen: "#0C512D",
         customDarkGreen: "#091110",
+        customBrightGreen: "#00FF79",
         customFadedGreen: "#0DA35433",
       },
       screens: {
@@ -36,8 +37,8 @@ export default {
         ".container": {
           width: '100%',
           maxWidth: '1200px',
-          paddingRight: '12px',
-          paddingLeft: '12px',
+          paddingRight: '16px',
+          paddingLeft: '16px',
           [`@media (min-width: ${theme("screens.md")})`]: {
             paddingRight: "32px",
             paddingLeft: "32px",

@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMenu = () => setShowMenu(!showMenu);
 
   return (
-    <nav className="container sticky top-[20px] left-0">
+    <nav className="container fixed top-[20px] left-1/2 -translate-x-1/2 z-40">
       <div className="bg-custom-dark-green p-4 md:p-5  rounded-[7px] flex justify-between items-center">
         <Link to="/" className="block z-50">
           <img src={logo} alt="main Devcir logo" className="w-20" />

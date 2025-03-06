@@ -1,0 +1,4 @@
+.btn-v3 {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 1.5px solid white;
+}

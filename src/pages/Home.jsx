@@ -1,9 +1,11 @@
-import React from 'react'
+import Hero from "../components/Hero/Hero";
 
 const home = () => {
   return (
-    <div className='min-h-[100dvh] flex items-center justify-center'>home</div>
-  )
-}
+    <>
+      <Hero />
+    </>
+  );
+};
 
-export default home
+export default home;
