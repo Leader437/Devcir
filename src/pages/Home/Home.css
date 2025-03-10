@@ -1,0 +1,6 @@
+.eclipse_container {
+    background-image: url("../../assets/elipse.png");
+    background-repeat: no-repeat;
+    background-position: left 0 top 70vh;
+    background-size: 100% calc(100% - 70vh);
+}

@@ -65,7 +65,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="block lg:hidden">
-              <Button btn_text="Do you have a Project?" />
+            <Button>Do you have a Project?</Button>
             </li>
           </ul>
         </div>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <option value="fr">Fr</option>
           </select>
           <div className="hidden lg:block">
-          <Button btn_text="Do you have a Project?" />
+          <Button>Do you have a Project?</Button>
           </div>
           <div className="block text-xl lg:hidden" onClick={toggleMenu}>
             <i className="ri-menu-3-fill"></i>

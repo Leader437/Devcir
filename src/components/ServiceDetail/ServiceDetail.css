@@ -1,0 +1,37 @@
+.service-detail-container {
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-image: url("./../../assets/dotted-bg.png");
+    background-size: 100% 100%;
+    background-color: #0DA35480;
+    backdrop-filter: blur(12px);
+}
+
+.service-icon-container {
+    background-image: url("./../../assets/dotted-bg.png");
+    background-size: 100% 100%;
+    background-color: #122915;
+    border-radius: 50%;
+    border: 1.5px solid #0DA354;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin-inline: auto;
+    box-shadow: 16px 12px 9px 2px #FFFFFF1A inset;
+    padding: 15px;
+}
+
+.service-icon-container img {
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+    .service-detail-container {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
