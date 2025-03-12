@@ -22,6 +22,10 @@ body {
   font-family: "Sora", "sans-serif";
 }
 
+button {
+  cursor: pointer
+}
+
 /*
 img,
 picture,

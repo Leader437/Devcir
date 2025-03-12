@@ -168,7 +168,7 @@ const Services = () => {
     <div className="container mt-18 sm:mt-20 lg:mt-24">
       <div className="flex flex-col md:flex-row md:items-end md:justify-between items-center gap-3">
         <div>
-          <h2 className="font-yaro text-3xl sm:text-4xl lg:text-5xl font-medium text-center md:text-left text-custom-white">
+          <h2 className="font-yaro uppercase text-3xl sm:text-4xl lg:text-5xl font-medium text-center md:text-left text-custom-white">
             <span className="text-[#666666]">Our</span> Services
           </h2>
           <p className="font-yaro text-sm lg:text-lg mt-3 lg:max-w-full mx-auto md:mx-0 text-center md:text-left md:leading-3 text-custom-grey">
