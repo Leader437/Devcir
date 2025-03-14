@@ -1,14 +1,14 @@
 const ProjectCard = ({name, category, description, month, year, projectImg}) => {
   return (
-    <div className="max-w-md w-full bg-custom-dark-green rounded-[32px] overflow-hidden p-6 h-full">
+    <div className="max-w-md w-full bg-custom-dark-green rounded-2xl overflow-hidden p-6 h-full">
       {/* Image Container */}
       <div className="relative mb-10 sm:mb-14">
         <img
           src={projectImg}
           alt="Project Preview Image"
-          className="w-full h-[220px] md:h-[240px] object-cover rounded-2xl"
+          className="w-full h-[200px] md:h-[240px] object-cover rounded-2xl"
         />
-        <button className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 bg-custom-green hover:bg-custom-contrast-green transition-colors text-white px-3 py-2 md:px-6 md:py-3 text-sm rounded-full font-medium flex items-center gap-2 whitespace-nowrap">
+        <button className="absolute left-1/2 -translate-x-1/2 bottom-0 translate-y-1/2 bg-custom-green hover:bg-custom-contrast-green transition-colors text-white px-3 py-2 md:px-6 md:py-3 text-sm rounded-full font-normal flex items-center gap-2 whitespace-nowrap">
           View Projects Details <i className="ri-arrow-right-line"></i>
         </button>
       </div>

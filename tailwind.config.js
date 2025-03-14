@@ -16,6 +16,7 @@ export default {
       colors: {
         customWhite: "#FFFFFF",
         customGrey: "#8D8D8D",
+        customLightGrey: "#1F1F1F",
         customGreen: "#0DA354",
         customContrastGreen: "#0C512D",
         customDarkGreen: "#091110",

@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react"
-import { Navigation } from "swiper/modules"
+import { Navigation, Autoplay } from "swiper/modules"
 import { useEffect } from "react"
 import "swiper/css"
 import "swiper/css/navigation"
@@ -104,10 +104,10 @@ const Works = () => {
         </div>
         <div className="flex flex-col-reverse md:flex-row gap-3 md:gap-4 justify-center items-center">
           <div className="bg-custom-faded-green p-2 rounded-full flex items-center gap-2 max-w-fit">
-            <button className="button-prev bg-custom-green text-base lg:text-lg rounded-full w-7 h-7 flex items-center justify-center">
+            <button className="button-prev-project bg-custom-green text-base lg:text-lg rounded-full w-7 h-7 flex items-center justify-center">
               <i className="ri-arrow-left-s-line"></i>
             </button>
-            <button className="button-next bg-custom-green text-base lg:text-lg rounded-full w-7 h-7 flex items-center justify-center">
+            <button className="button-next-project bg-custom-green text-base lg:text-lg rounded-full w-7 h-7 flex items-center justify-center">
               <i className="ri-arrow-right-s-line"></i>
             </button>
           </div>
@@ -118,14 +118,19 @@ const Works = () => {
       </div>
 
       <Swiper
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         slidesPerView={1.1}
         spaceBetween={20}
         centeredSlides={true}
         loop={true}
+        grabCursor={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false
+        }}
         navigation={{
-          nextEl: ".button-next",
-          prevEl: ".button-prev",
+          nextEl: ".button-next-project",
+          prevEl: ".button-prev-project",
         }}
         breakpoints={{
           480: { slidesPerView: 1.5 },
