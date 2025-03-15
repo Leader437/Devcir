@@ -1,6 +1,6 @@
 const ProjectCard = ({name, category, description, month, year, projectImg}) => {
   return (
-    <div className="max-w-md w-full bg-custom-dark-green rounded-2xl overflow-hidden p-6 h-full">
+    <div className="max-w-md w-full bg-custom-dark-green rounded-2xl overflow-hidden p-6 min-h-[520px] xl:min-h-[580px]">
       {/* Image Container */}
       <div className="relative mb-10 sm:mb-14">
         <img

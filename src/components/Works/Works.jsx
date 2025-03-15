@@ -77,19 +77,19 @@ const Works = () => {
     },
   ]
 
-  useEffect(() => {
-    const slides = document.querySelectorAll(".swiper-slide")
-    let maxHeight = 0
+  // useEffect(() => {
+  //   const slides = document.querySelectorAll(".swiper-slide")
+  //   let maxHeight = 0
   
-    // finding the maximum height of slides
-    slides.forEach((slide) => {
-      maxHeight = Math.max(maxHeight, slide.offsetHeight)
-    })
-    // setting the maximum height to all slides
-    slides.forEach((slide) => {
-      slide.style.height = `${maxHeight}px`
-    })
-  }, [])
+  //   // finding the maximum height of slides
+  //   slides.forEach((slide) => {
+  //     maxHeight = Math.max(maxHeight, slide.offsetHeight)
+  //   })
+  //   // setting the maximum height to all slides
+  //   slides.forEach((slide) => {
+  //     slide.style.height = `${maxHeight}px`
+  //   })
+  // }, [])
   
   return (
     <div className="relative">
@@ -140,10 +140,10 @@ const Works = () => {
           1200: { slidesPerView: 3.3 },
           1400: { slidesPerView: 4 },
         }}
-        className="mt-10 px-4"
+        className="mt-10 px-4 flex"
       >
         {projectList.map((project) => (
-          <SwiperSlide key={project.name} className="pb-10">
+          <SwiperSlide key={project.name} className="">
             <ProjectCard
               name={project.name}
               category={project.category}
