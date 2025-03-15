@@ -7,10 +7,10 @@ import SystemDevelopment from "../HeroContents/SystemDevelopment.jsx";
 import AiDevelopment from "../HeroContents/AiDevelopment.jsx";
 import CmsDevelopment from "../HeroContents/CmsDevelopment.jsx";
 
-
-
 const Hero = () => {
-  const [activeService, setActiveService] = useState("Web Apps Design & Development");
+  const [activeService, setActiveService] = useState(
+    "Web Apps Design & Development"
+  );
 
   const HeroContent = () => {
     switch (activeService) {
@@ -40,7 +40,10 @@ const Hero = () => {
   };
 
   const ServiceCard = ({ title, onclick }) => (
-    <div className={`bg-custom-dark-green flex items-center justify-center border-1 border-solid border-custom-green text-white py-4 px-3 rounded-lg z-10 transition duration-300 hover:shadow-[0_0_8px_2px_#00FF79] cursor-pointer ${activeService == title ? "shadow-[0_0_8px_2px_#00FF79]" : ""}`} onClick={onclick}>
+    <div
+      className={`bg-custom-dark-green flex items-center justify-center border-1 border-solid border-custom-green text-white py-4 px-3 rounded-lg z-10 transition duration-300 hover:shadow-[0_0_8px_2px_#00FF79] cursor-pointer ${activeService == title ? "shadow-[0_0_8px_2px_#00FF79]" : ""}`}
+      onClick={onclick}
+    >
       <h3 className="text-sm font-normal text-center">{title}</h3>
     </div>
   );
@@ -84,12 +87,50 @@ const Hero = () => {
               <span className="bg-[#101012] w-5 h-5 absolute left-0 top-0 rounded-tl-2xl"></span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-              <ServiceCard title="Web Apps Design & Development" onclick={() => setActiveService("Web Apps Design & Development")} />
-              <ServiceCard title="Mobile Apps Design & Development" onclick={() => setActiveService("Mobile Apps Design & Development")} />
-              <ServiceCard title="Website Design & Development" onclick={() => setActiveService("Website Design & Development")} />
-              <ServiceCard title="AI Development, Consultation & Integration" onclick={() => setActiveService("AI Development, Consultation & Integration")} />
-              <ServiceCard title="CMS Development & Customization" onclick={() => setActiveService("CMS Development & Customization")} />
-              <ServiceCard title="Systems Development & Implementation" onclick={() => setActiveService("Systems Development & Implementation")} />
+              <ServiceCard
+                title="Web Apps Design & Development"
+                onclick={() => {
+                  setActiveService("Web Apps Design & Development");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
+              <ServiceCard
+                title="Mobile Apps Design & Development"
+                onclick={() => {
+                  setActiveService("Mobile Apps Design & Development");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
+              <ServiceCard
+                title="Website Design & Development"
+                onclick={() => {
+                  setActiveService("Website Design & Development");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
+              <ServiceCard
+                title="AI Development, Consultation & Integration"
+                onclick={() => {
+                  setActiveService(
+                    "AI Development, Consultation & Integration"
+                  );
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
+              <ServiceCard
+                title="CMS Development & Customization"
+                onclick={() => {
+                  setActiveService("CMS Development & Customization");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
+              <ServiceCard
+                title="Systems Development & Implementation"
+                onclick={() => {
+                  setActiveService("Systems Development & Implementation");
+                  window.scrollTo({ top: 0, behavior: "smooth" });
+                }}
+              />
             </div>
           </div>
         </div>
