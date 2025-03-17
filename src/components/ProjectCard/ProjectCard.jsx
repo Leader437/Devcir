@@ -1,6 +1,6 @@
-const ProjectCard = ({name, category, description, month, year, projectImg}) => {
+const ProjectCard = ({name, category, description, month, year, projectImg, width}) => {
   return (
-    <div className="max-w-md w-full bg-custom-dark-green rounded-2xl overflow-hidden p-6 min-h-[520px] xl:min-h-[580px]">
+    <div className={`w-full bg-custom-dark-green rounded-2xl overflow-hidden p-6 min-h-[520px] ${width == 'half'? "max-w-md lg:max-w-[48%]" : "max-w-md xl:min-h-[580px]"}`}>
       {/* Image Container */}
       <div className="relative mb-10 sm:mb-14">
         <img

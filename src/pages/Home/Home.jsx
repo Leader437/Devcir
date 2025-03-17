@@ -10,7 +10,7 @@ const home = () => {
   return (
     <>
       <Hero />
-      <div className=" eclipse_container">
+      <div className="eclipse_container">
         <Partners/>
         <Services/>
         <Works/>
