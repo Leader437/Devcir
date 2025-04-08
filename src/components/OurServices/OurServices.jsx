@@ -1,6 +1,5 @@
 import Button from "../Button/Button";
 import ServiceDetail from "../ServiceDetail/ServiceDetail";
-import "./Services.css";
 import serviceDetailIcon1 from "../../assets/serviceDetailIcon1.svg";
 
 const servicesList = [
