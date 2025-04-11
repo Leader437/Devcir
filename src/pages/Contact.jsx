@@ -1,8 +1,10 @@
-import React from 'react'
+import InquiryForm from '../components/InquiryForm/InquiryForm'
 
 const Contact = () => {
   return (
-    <div className='min-h-[100dvh] flex items-center justify-center'>Contact</div>
+    <div className='container flex items-center justify-center'>
+      <InquiryForm />
+    </div>
   )
 }
 

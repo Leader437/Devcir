@@ -11,7 +11,7 @@ import Footer from "./components/Footer/Footer.jsx";
 function App() {
   return (
     <>
-      <div className="min-h-[400dvh] text-custom-white pt-25 md:pt-30" id="app-main">
+      <div className="text-custom-white pt-25 md:pt-30" id="app-main">
         <BrowserRouter>
           <Navbar />
           <Routes>
